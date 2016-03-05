@@ -3,8 +3,8 @@
 // Add scripts
 function sl_add_scripts() {
 
-	wp_enqueue_style('sl-main-style', plugins_url() . '/social-links/css/style.css');
-	wp_enqueue_style('sl-main-script', plugins_url() . '/social-links/js/main.js');
+	wp_enqueue_style('sl-main-style', plugins_url() . '/social-links-widget/css/style.css');
+	wp_enqueue_style('sl-main-script', plugins_url() . '/social-links-widget/js/main.js');
 
 }
 

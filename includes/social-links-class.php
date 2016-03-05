@@ -6,9 +6,9 @@ class Social_Links_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 		parent::__construct(
-			'another_social_links_widget', // Base ID
-			__( 'Another Social Links Widget', 'slw_domain' ), // Name
-			array( 'description' => __( 'Outputs social icons and links to sidebar', 'slw_domain' ), ) // Args
+			'social_links_widget', // Base ID
+			__( 'Another Social Links Widget', 'sl_domain' ), // Name
+			array( 'description' => __( 'Outputs social icons and links to sidebar', 'sl_domain' ), ) // Args
 		);
 	}
 
@@ -119,7 +119,7 @@ class Social_Links_Widget extends WP_Widget {
 			$facebook_icon = esc_attr($instance['facebook_icon']);
 		}
 		else{
-			$facebook_icon = plugins_url() . '/social-links/img/facebook.png';
+			$facebook_icon = plugins_url() . '/social-links-widget/img/facebook.png';
 		}
 
 		//Get Twitter Icon
@@ -127,7 +127,7 @@ class Social_Links_Widget extends WP_Widget {
 			$twitter_icon = esc_attr($instance['twitter_icon']);
 		}
 		else{
-			$twitter_icon = plugins_url() . '/social-links/img/twitter.png';
+			$twitter_icon = plugins_url() . '/social-links-widget/img/twitter.png';
 		}
 
 		//Get Linkedin Icon
@@ -135,7 +135,7 @@ class Social_Links_Widget extends WP_Widget {
 			$linkedin_icon = esc_attr($instance['linkedin_icon']);
 		}
 		else{
-			$linkedin_icon = plugins_url() . '/social-links/img/linkedin.png';
+			$linkedin_icon = plugins_url() . '/social-links-widget/img/linkedin.png';
 		}
 
 		//Get Google icon
@@ -143,7 +143,7 @@ class Social_Links_Widget extends WP_Widget {
 			$google_icon = esc_attr($instance['google_icon']);
 		}
 		else{
-			$google_icon = plugins_url() . '/social-links/img/google.png';
+			$google_icon = plugins_url() . '/social-links-widget/img/google.png';
 		}
 
 		//Get Icon Size
